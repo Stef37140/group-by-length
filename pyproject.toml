@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "group-by-length"
 version = "0.1.0"
 description = "Fonction pour grouper des chaînes par longueur"
-authors = [ { name = "<Ton Nom>", email = "<ton.email@example.com>" } ]
+authors = [ { name = "Stef37140", email = "70194712+Stef37140@users.noreply.github.com" } ]
 readme = "README.md"
 license = { file = "LICENSE" }
 classifiers = [
@@ -14,6 +14,12 @@ classifiers = [
   "License :: OSI Approved :: MIT License"
 ]
 dependencies = []
+
+[project.scripts]
+group-by-length = "cli_and_benchmark:main"
+
+[tool.setuptools]
+py-modules = ["group_by_length", "cli_and_benchmark"]
 
 [tool.setuptools.packages.find]
 where = ["."]
