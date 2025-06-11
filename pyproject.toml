@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "group-by-length"
+version = "0.1.0"
+description = "Fonction pour grouper des chaînes par longueur"
+authors = [ { name = "<Ton Nom>", email = "<ton.email@example.com>" } ]
+readme = "README.md"
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License"
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
